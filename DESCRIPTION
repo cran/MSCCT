@@ -1,6 +1,6 @@
 Package: MSCCT
 Title: Multiple Survival Crossing Curves Tests
-Version: 1.0.0
+Version: 1.0.2
 Authors@R: c(
     person("Hugo", "MINA PASSI", , "hugo.minapassi@gmail.com", role = c("aut", "cre", "cph")),
     person("Olayidé", "BOUSSARI", , "olayide.boussari@u-bourgogne.fr", role = "aut"))
@@ -18,9 +18,9 @@ Config/testthat/edition: 3
 URL: https://github.com/HMinP/MSCCT
 BugReports: https://github.com/HMinP/MSCCT/issues
 NeedsCompilation: no
-Packaged: 2025-07-24 09:21:33 UTC; hm428023
+Packaged: 2025-07-29 12:20:56 UTC; hm428023
 Author: Hugo MINA PASSI [aut, cre, cph],
   Olayidé BOUSSARI [aut]
 Maintainer: Hugo MINA PASSI <hugo.minapassi@gmail.com>
 Repository: CRAN
-Date/Publication: 2025-07-25 16:20:15 UTC
+Date/Publication: 2025-07-29 19:20:27 UTC

@@ -1,6 +1,6 @@
-7995c7b7a722cf4e24130c7c46a69b12 *DESCRIPTION
+15fea4103452f77be4e0dae3409a90cd *DESCRIPTION
 1b7c9bafdd3b80be6a3eb1be74ede205 *NAMESPACE
-f83fb8361f1ca29702b468ac1b78b0db *NEWS.md
+e7b0eaf0fa5e93794d998c1857525cb4 *NEWS.md
 1a81f8fd14b76f54e3402dbe8a898d7b *R/MSCCT-package.R
 fb1b0c64e6f5a8445fa4b64477ea56d8 *R/data.R
 b8393392a59fbd83a0acb0ef8801515a *R/multi_lr.R
@@ -20,5 +20,5 @@ e6bebba93ead684751142a6b08676941 *man/multi_ts.Rd
 3a6b281a0fc18614d6e1fa9093edf568 *man/print.multi_ts.Rd
 ef9bc2b25582e0199639a32bb6d30ccb *tests/testthat.R
 1fd89322a830f63365f0ea9d1e549e7e *tests/testthat/test-multi_lr.R
-257cc282770dc56927259a31c34a19b0 *tests/testthat/test-multi_rmst.R
-e4828936a4a8f92c118af807344862cc *tests/testthat/test-multi_ts.R
+9852041792091340a09ccf7e6f8a061e *tests/testthat/test-multi_rmst.R
+c408297786f4b718603bda6f66087e12 *tests/testthat/test-multi_ts.R

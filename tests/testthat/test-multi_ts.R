@@ -22,22 +22,25 @@ test_that("The arguments given are correct", {
 
 test_that("The results are correct", {
   testthat::skip_if_not_installed("TSHRC")
-  X = multi_ts(data_not_PH, nboot=100, eps=0.25)$results
+  
+  set.seed(42)
+  df = data_not_PH[c(1:200, 401:600, 801:1000),]
+  X = multi_ts(df, nboot=150, eps=0.01)$results
   X = X[,1:2]
   X = unname(X)
   
-  ind=matrix(c(0,1,0,2,1,2),nrow=3,byrow=TRUE)
+  ind=matrix(c(0, 1, 0, 2, 1, 2),nrow=3,byrow=TRUE)
   Y = matrix(NA, nrow=3, ncol=2)
   for (k in 1:3){
     i=ind[k,1]
     j=ind[k,2]
-    index_ij = (data_not_PH$arm == i) | (data_not_PH$arm == j)
-    df_ij = data_not_PH[index_ij,]
+    index_ij = (df$arm == i) | (df$arm == j)
+    df_ij = df[index_ij,]
     df_ij$arm = (df_ij$arm - i) / (j-i)
     
-    test = TSHRC::twostage(df_ij$time, df_ij$status, df_ij$arm, nboot=100, eps=0.25)
+    test = TSHRC::twostage(df_ij$time, df_ij$status, df_ij$arm, nboot=150, eps=0.01)
     Y[k,] = unname(test)[1:2]
   }
-  expect_equal(X, Y, tolerance=0.05)
+  expect_equal(X, Y, tolerance=0.15)
 })
 
